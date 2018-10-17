@@ -1,0 +1,1140 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WOWX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap & Jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="jQuery.countdownTimer.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <link href="magnific-popup.css" rel="stylesheet">
+    <link href="sidemenu.css" rel="stylesheet">
+    <link href="flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="media-queries.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+
+<style>
+
+.white-popup {
+	position: relative;
+	background: #252525;
+	width: auto;
+	max-width: 750px;
+	margin: 25px auto;
+	padding: 50px 25px;
+}
+
+.white-popup .h-title {
+  height:auto;
+  border-left: 10px solid #f8992b;
+  padding:15px 0;
+	padding-left:30px;
+  box-sizing: border-box;
+  display: block;
+}
+
+#participateform, #listform {
+	max-width: 555px !important;
+}
+
+.white-popup h1, .white-popup h2, .white-popup p {color:#fff;}
+
+.mfp-bg {
+	background: #f8992b;
+}
+.mfp-close-btn-in .mfp-close {
+	color: #bbbbbb;
+}
+.mfp-close {
+	font-size: 36px;
+}
+
+</style>
+
+<!-- Add sidemenu -->
+<script>
+(function($){
+	// Menu Functions
+	$(document).ready(function(){
+  	$('#menuToggle').click(function(e){
+    	var $parent = $(this).parent('nav');
+      $parent.toggleClass("open");
+      var navState = $parent.hasClass('open') ? "hide" : "show";
+      $(this).attr("title", navState + " navigation");
+			// Set the timeout to the animation length in the CSS.
+			setTimeout(function(){
+				console.log("timeout set");
+				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+			}, 200);
+    	e.preventDefault();
+  	});
+  });
+})(jQuery);
+
+          function closeSidebar(e) {
+            var obj = event.target;
+            var $parent = $('nav');
+            $parent.toggleClass("open");
+            var navState = $parent.hasClass('open') ? "hide" : "show";
+            $(obj).attr("title", navState + " navigation");
+            setTimeout(function () {
+              $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+            }, 200);
+          }
+
+   </script>
+
+</head>
+<body>
+
+ <div class="social-links">
+    <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="" target="_blank"><i class="fa fa-medium"></i></a>
+    <a href="" target="_blank"><i class="fa fa-bitcoin"></i></a>
+    <a href="" target="_blank"><i class="fa fa-telegram"></i></a>
+ </div>
+  
+<!------------ Navigation start ------------>
+<header>
+  <div class="container"><a href="#home">
+    <div id="logo"></div>
+    </a>
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">WOWX Features</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <nav> 
+      <a href="" id="menuToggle" title="show menu"><span class="navClosed"></span></a> 
+      <a href="#home" onclick="closeSidebar(this)">Home</a>
+      <a href="#about" onclick="closeSidebar(this)">WOWX Features</a>
+      <a href="#media" onclick="closeSidebar(this)">Media</a>
+      <a href="#video" onclick="closeSidebar(this)">Video</a>
+      <a href="#team" onclick="closeSidebar(this)">Team</a>
+      <a href="#roadmap" onclick="closeSidebar(this)">Roadmap</a>
+      <a href="#contact" onclick="closeSidebar(this)">Contact Us</a>
+    </nav>
+  </div>
+</header>
+<!------------ Navigation end ------------>
+
+<!------------ Home start ------------>
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <!--
+      <div class="col-md-6 col-sm-6 main-img v-pad">
+        <img src="img/mobile.png" alt="">
+      </div>-->
+      <div class="col-md-12 main-logo v-pad">
+        <img class="wow fadeInUp" src="img/main-wowx.png" alt="">
+        <br><br>
+        <h1 class="wow fadeInUp" data-wow-delay="0.3s">centralized crypto-to-crypto exchange</h1>
+        <br><br>
+        <div class="countdown wow fadeInLeft" data-wow-delay="0.6s">
+          <div id="countdowntimer"><span id="future_date"></span></div>
+        </div>
+        <br><br><br>
+        <div class="progress-container">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div>
+          </div>
+          <div class="sale-container">
+            <div class="zerocap">USD$0</div>
+            <div class="current-cap">USD$8,000,000</div>
+            <div class="hardcap">Hard Cap USD$29,595,238.10</div>
+          </div>
+        </div>  
+        <br><br><br><br>
+        <a href="wowx-whitepaper.pdf" target="_blank" class="btn wow fadeInUp" data-wow-delay="0.3s">Whitepaper</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#participateform" class="btn  open-popup-link wow fadeInUp" data-wow-delay="0.3s">Participate</a>
+      </div>
+    </div>
+    <br><br>
+    <!--
+    <div class="row">
+      <div class="col-md-4 col-sm-4 v-pad">
+        <div class="main-stocks wow fadeInUp" data-wow-delay="0.6s">
+          <p class="white-text">BTC / USDT</p>
+          <p style="color:#42de88;"><span class="bold">6589.60</span> &nbsp;&nbsp;&nbsp;+1.22%</p>
+          <p class="small-font">=6589.60 USD</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 v-pad">
+        <div class="main-stocks wow fadeInUp" data-wow-delay="0.6s">
+          <p class="white-text">BTC / USDT</p>
+          <p style="color:#42de88;"><span class="bold"></span>6589.60</span> &nbsp;&nbsp;&nbsp;+1.22%</p>
+          <p class="small-font">=6589.60 USD</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 v-pad">
+        <div class="main-stocks wow fadeInUp" data-wow-delay="0.6s">
+          <p class="white-text">BTC / USDT</p>
+          <p style="color:#42de88;"><span class="bold"></span>6589.60</span> &nbsp;&nbsp;&nbsp;+1.22%</p>
+          <p class="small-font">=6589.60 USD</p>
+        </div>
+      </div>
+    </div>-->
+  </div>
+</div>
+<!------------ Home end ------------>
+
+<!------------ WOWX features start ------------>
+<section id="about">
+  <div class="container">
+    <div class="h-title"><h1>Key Features</h1></div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 v-pad feature-icon wow fadeinLeft">
+        <img src="img/feature-icon-1.png" alt="">
+      </div>
+      <div class="col-md-8 col-sm-8 v-pad wow fadeinRight">
+        <div class="feature-col feature-col-r">
+          <div class="feature-line"></div>
+          <h2>Airdrop of Listing Fees for Token Holders</h2>
+          <p>A unique token distribution system for listing fees. ICOs pay lesser for listing with us and WOWX users get payout simply for holding our tokens</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 v-pad feature-icon feature-float-r wow fadeinRight">
+        <img src="img/feature-icon-2.png" alt="">
+      </div>
+      <div class="col-md-8 col-sm-8 v-pad feature-icon feature-float-r wow fadeinLeft">
+        <div class="feature-col feature-col-l">
+            <div class="feature-line" style="float:right;"></div>
+            <div style="clear:both;"></div>
+            <h2>Crypto-to-Fiat Support for Merchant</h2>
+            <p>WOWX will establish its own subsidiary platform that functions as a cryptocurrency payment service provider, enabling payment services to e-commerce merchants worldwide for their goods and services online and offline.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 v-pad feature-icon wow fadeinLeft">
+        <img src="img/feature-icon-cards.png" alt="">
+      </div>
+      <div class="col-md-8 col-sm-8 v-pad wow fadeinRight">
+        <div class="feature-col feature-col-r">
+          <div class="feature-line"></div>
+          <h2>WOWX Smart Card</h2>
+          <p>WOWX will be integrating a hardware technology that functions as a portable, secure storage device, which may be furthered to include a cryptocurrency-spending function. Device comes with multi-factor authentication.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 v-pad feature-icon feature-float-r wow fadeinRight">
+        <img src="img/feature-icon-4.png" alt="">
+      </div>
+      <div class="col-md-8 col-sm-8 v-pad feature-icon feature-float-r wow fadeinLeft">
+        <div class="feature-col feature-col-l">
+            <div class="feature-line" style="float:right;"></div>
+            <div style="clear:both;"></div>
+            <h2>Echo Trade</h2>
+            <p>Our system allows everyday users the option to trade and invest based on real-time actions and decisions of top traders, automatically processing real-time market movements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="width:100%; height:1px; background:#eeeeee; margin:90px 0;"></div>
+  <div class="container">
+    <div class="h-title"><h1>WOWX Membership Tiers</h1></div>
+    <br><br>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;">
+        <tr>
+          <td></td>
+          <td><img src="img/cc-blue.png" alt=""></td>
+          <td><img src="img/cc-gold.png" alt=""></td>
+          <td><img src="img/cc-platinum.png" alt=""></td>
+          <td><img src="img/cc-reserve.png" alt=""></td>
+          <td><img src="img/cc-black.png" alt=""></td>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Blue</th>
+          <th>Gold</th>
+          <th>Platinum</th>
+          <th>Reserve</th>
+          <th>Black</th>
+        </tr>
+        <tr>
+          <td class="bold" style="text-align:left;">Min. Trading Volume</td>
+          <td>No Minimum</td>
+          <td>100 BTC</td>
+          <td>500 BTC</td>
+          <td>5,000 BTC</td>
+          <td>10,000 BTC</td>
+        </tr>
+        <tr>
+          <td class="bold" style="text-align:left;">Trading Fees</td>
+          <td>0.1%</td>
+          <td>0.09%</td>
+          <td>0.08%</td>
+          <td>0.07%</td>
+          <td>0.005%</td>
+        </tr>
+        <tr>
+          <td class="bold" style="text-align:left;">Payout Factor</td>
+          <td>0.5</td>
+          <td>0.75</td>
+          <td>1.25</td>
+          <td>1.5</td>
+          <td>2.5</td>
+        </tr>
+        <tr>
+          <td class="bold" style="text-align:left;">Referral Fees</td>
+          <td>50%</td>
+          <td>50%</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td class="bold" style="text-align:left;">Daily Withdrawal Limit</td>
+          <td>No Limit</td>
+          <td>No Limit</td>
+          <td>No Limit</td>
+          <td>No Limit</td>
+          <td>No Limit</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+<section class="angle-bg black-angle">
+  <div class="container">
+    <div class="h-title"><h1 style="color:#fff;">Get More With Us</h1></div>
+    <br><br><br>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 feature-icon v-pad wow fadeinLeft">
+        <img src="img/icon-cashback.png" alt="">
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad wow fadeInUp">
+        <h2 class="orange-text">Receive Cashback on Trading Fees</h2>
+        <br><br>
+        <p class="white-text">WOWX will commit a percentage of revenue taken from trading fees to incentivize users to invite other traders to trade on the platform. Users can invite others via a referral code unique to them and those who successfully invite others to trade on WOWX will receive a share of the invited person's trading fee as a bonus.</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 feature-table feature-float-r v-pad wow fadeinRight">
+        <img src="img/icon-level.png" alt="">
+      </div>
+      <div class="col-md-6 col-sm-6 feature-float-r v-pad wow fadeInUp" style="text-align:right; padding-top: 60px;">
+        <h2 class="orange-text">Grow Your Account Levels</h2>
+        <br><br>
+        <p class="white-text">While you earn cashbacks, WOWX also encourages you to grow your account. With different tiers of multiple benefits, users are incentivized to trade and create more activity on the platform.</p>
+      </div> 
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 feature-table v-pad wow fadeinLeft">
+          <img src="img/icon-lowfee.png" alt="">
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad wow fadeInUp" style="padding-top: 60px;">
+        <h2 class="orange-text">Low Trading Prices</h2>
+        <br><br>
+        <p class="white-text">To encourage more Makers, should they choose to pay trading fees in WOWX Tokens rather than the trading currency, WOWX will give a 50% discount on trading fee for users on top of their trading account levels.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ WOWX features end ------------>
+
+<!------------ Media start ------------>
+<section id="media" class="angle-bg grey-angle" style="margin-top:-1px;">
+  <div class="container">
+    <div class="h-title"><h1>Featured On</h1></div>
+    <br><br>
+    <!--
+    <div class="row">
+      <div class="flex-container wow fadeInUp">
+        <div class="media-slider">
+          <ul class="slides">
+            <li>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                <img src="img/media-logo.png" alt="">
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <img src="img/media-logo.png" alt="">
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <img src="img/media-logo.png" alt="">
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <img src="img/media-logo.png" alt="">
+              </div>
+            </li>
+            <li>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                <img src="img/media-logo.png" alt="">
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <img src="img/media-logo.png" alt="">
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <img src="img/media-logo.png" alt="">
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+                  <img src="img/media-logo.png" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>-->
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <img src="img/media-logo.png" alt="">
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+          <img src="img/media-logo.png" alt="">
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+          <img src="img/media-logo.png" alt="">
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+          <img src="img/media-logo.png" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <img src="img/media-logo.png" alt="">
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+          <img src="img/media-logo.png" alt="">
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+          <img src="img/media-logo.png" alt="">
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+          <img src="img/media-logo.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Media end ------------>
+
+<!------------ Media start ------------>
+<section id="video">
+    <div class="container">
+      <div class="h-title"><h1>Video</h1></div>
+      <br><br>
+      <div class="row">
+        <div class="flex-container wow fadeInUp">
+          <div class="video-slider">
+            <ul class="slides">
+              <li>
+                <div class="col-md-4 col-sm-4 v-pad" style="text-align:center;">
+                  <img src="img/thumb-video.png" alt="">
+                  <br><br>
+                  <p class="bold">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="col-md-4 col-sm-4 v-pad" style="text-align:center;">
+                  <img src="img/thumb-video.png" alt="">
+                  <br><br>
+                  <p class="bold">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="col-md-4 col-sm-4 v-pad" style="text-align:center;">
+                  <img src="img/thumb-video.png" alt="">
+                  <br><br>
+                  <p class="bold">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+              </li>
+              <li>
+                <div class="col-md-4 col-sm-4 v-pad" style="text-align:center;">
+                  <img src="img/thumb-video.png" alt="">
+                  <br><br>
+                  <p class="bold">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="col-md-4 col-sm-4 v-pad" style="text-align:center;">
+                  <img src="img/thumb-video.png" alt="">
+                  <br><br>
+                  <p class="bold">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <div class="col-md-4 col-sm-4 v-pad" style="text-align:center;">
+                  <img src="img/thumb-video.png" alt="">
+                  <br><br>
+                  <p class="bold">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!------------ Media end ------------>
+
+<!------------ Team start ------------>
+<section id="team" class="grey-pattern">
+  <div class="container">
+    <div class="h-title"><h1 class="white-text">Team</h1></div>
+    <br><br><br><br>
+    <div class="row wow fadeInUp" style="text-align:center;">
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <a href="#alan" class="open-popup-link"><img src="img/team.png" alt=""></a>
+        <br><br>
+        <h2>Alan Chee</h2>
+        <p>CEO</p>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <img src="img/team.png" alt="">
+        <br><br>
+        <h2>KC Wong</h2>
+        <p>CEO</p>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <img src="img/team.png" alt="">
+        <br><br>
+        <h2>Liuh Jong</h2>
+        <p>CEO</p>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <img src="img/team.png" alt="">
+        <br><br>
+        <h2>Xueling</h2>
+        <p>CEO</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row wow fadeInUp" style="text-align:center;">
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <img src="img/team.png" alt="">
+        <br><br>
+        <h2>Alicia Yong</h2>
+        <p>CEO</p>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <img src="img/team.png" alt="">
+        <br><br>
+        <h2>Jimmy Ng</h2>
+        <p>CEO</p>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <img src="img/team.png" alt="">
+        <br><br>
+        <h2>Micky Phang</h2>
+        <p>CEO</p>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
+        <img src="img/team.png" alt="">
+        <br><br>
+        <h2>Darren Teh</h2>
+        <p>CEO</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Team end ------------>
+
+<!------------ Roadmap start ------------>
+<section id="roadmap">
+  <div class="container">
+    <div class="h-title"><h1 class="white-text">Roadmap</h1></div>
+    <br><br><br><br>
+    <div class="flex-container roadmap-container wow fadeInUp" data-wow-delay="0.3s">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <div class="roadmap-col">
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2019 Q1</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>ICO Token Sale</p>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>MVP UI/UX development</p>
+                </li>
+              </ul>
+            </div>
+            <div class="roadmap-col">       
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2019 Q2</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>KYC onboarding system</p>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Market research - Merchant focus groups and surveys</p>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Crypto payment integration - Crypto payment integration</p>
+                </li>
+              </ul>
+            </div>
+            <div class="roadmap-col">
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2019 Q3</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>API Support</p>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Hardware wallet development</p>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Universal listing ETH Smart Contract</p>
+                </li>
+              </ul>
+            </div>
+            <div class="roadmap-col">      
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2019 Q4</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Trading MVP release (Beta)</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="roadmap-col">
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2020 Q1</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Hardware wallet integration and distribution</p>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Payment gateway development - POS systems integration</p>
+                </li>            
+              </ul>
+            </div>
+            <div class="roadmap-col">       
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2020 Q2</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Margin Trading Launch</p>
+                </li>          
+              </ul>
+            </div>
+            <div class="roadmap-col">
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2020 Q3</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Payment service launch for ETH and WOWX</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Merchant processing roll out</p>
+                </li>          
+              </ul>
+            </div>
+            <div class="roadmap-col">      
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2020 Q4</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Trading bots software development kit (SDK)</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Margin trading for alternate currencies</p>
+                </li>   
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Scale and performance enhancements</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Merchant acquisition with third party service plugins</p>
+                </li>        
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="roadmap-col">      
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2021 Q1</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Audit and regulation enhancements</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Audit and regulation enhancements</p>
+                </li>        
+              </ul>
+            </div>
+            <div class="roadmap-col">      
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line blank-line"></div>
+              <br>
+              <h2>2021 Q2</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Global payment system roll out</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>1000 Merchants processing with WOWX</p>
+                </li>   
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>WOWX POS hardware release</p>
+                </li>      
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex-container roadmap-container-m wow fadeInUp">
+      <div class="mobile-slider">
+        <ul class="slides">
+          <li>
+            <div class="roadmap-col roadmap-mobile">
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2019 Q1</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>ICO Token Sale</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>MVP UI/UX development</p>
+                </li>        
+              </ul>
+            </div>
+            <div class="roadmap-col roadmap-mobile">       
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2019 Q2</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>KYC onboarding system</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Market research - Merchant focus groups and surveys</p>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Crypto payment integration - ETH, BTC and WOWX payment integration</p>
+                </li>         
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="roadmap-col roadmap-mobile">
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2019 Q3</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>API Support</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Hardware wallet development</p>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Universal listing ETH Smart Contract</p>
+                </li>         
+              </ul>
+            </div>
+            <div class="roadmap-col roadmap-mobile">       
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2019 Q4</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Trading MVP release (Beta)</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="roadmap-col roadmap-mobile">
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2020 Q1</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Hardware wallet integration and distribution</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Payment gateway development - POS systems integration</p>
+                </li>       
+              </ul>
+            </div>
+            <div class="roadmap-col roadmap-mobile">       
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2020 Q2</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Margin Trading Launch</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="roadmap-col roadmap-mobile">
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2020 Q3</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Payment service launch for ETH and WOWX</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Merchant processing roll out</p>
+                </li>       
+              </ul>
+            </div>
+            <div class="roadmap-col roadmap-mobile">       
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2020 Q4</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Trading bots software development kit (SDK)</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Margin trading for alternate currencies</p>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Scale and performance enhancements</p>
+                </li> 
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Merchant acquisition with third party service plugins</p>
+                </li>       
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="roadmap-col roadmap-mobile">       
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2021 Q1</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Audit and regulation enhancements</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>WOWX stand-alone POS hardware development</p>
+                </li>      
+              </ul>
+            </div>
+            <div class="roadmap-col roadmap-mobile">       
+              <div class="roadmap-dot"><div class="roadmap-sq"></div></div>
+              <div class="roadmap-line"></div>
+              <br>
+              <h2>2021 Q2</h2>
+              <ul class="fa-ul">
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>Global payment system roll out</p>
+                </li>  
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>1000 Merchants processing with WOWX</p>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-circle"></i>
+                  <p>WOWX POS hardware release</p>
+                </li>       
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Roadmap end ------------>
+
+<!------------ CTA start ------------>
+<section class="cta">
+  <div class="container wow fadeInUp">
+    <h1 class="white-text">Keen to list your project with us?</h1>
+    <br><br>
+    <a href="#listform" class="btn white-btn open-popup-link">Reach Out Now</a>
+  </div>
+</section>
+<!------------ CTA end ------------>
+
+<!------------ Contact start ------------>
+<section id="contact" class="darkgrey-pattern">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 v-pad">
+        <div class="h-title"><h1 class="white-text">Contact Us</h1></div>
+        <br><br><br>
+        <p class="white-text wow fadeInLeft">For enquiries, please email us at</p>
+        <a href="mailto:hello@wowx.io"><h2 style="color:#f2c968;" class="wow fadeInLeft">hello@wowx.io</h2></a>
+        <br><br><br>
+        <ul class="social wow fadeinLeft">
+          <li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="" target="_blank"><i class="fa fa-medium"></i></a></li>
+          <li><a href="" target="_blank"><i class="fa fa-bitcoin"></i></a></li>
+          <li><a href="" target="_blank"><i class="fa fa-telegram"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-sm-6 v-pad wow fadeInUp">
+        <div class="contact-messages"></div>
+        <form id='contactus' class="ajax-subscription" action='mailer.php' method='post' accept-charset='UTF-8'>
+          <input type='hidden' name='submitted' id='submitted' value='1'/>
+          <input type="hidden" name="type" value="subscription" />
+          <br>
+          <input type='text' class="input-style" name='NAME' id='contact_name'  placeholder="Name" required/>
+          <br>
+          <input type='text' class="input-style" name='EMAIL' id='contact_email'  placeholder="Email Address" required/>
+          <br>
+          <!--<select name='INQUIRY' id='contact_inquiry'>
+            <option>Nature of Inquiry</option>
+            <option>General</option>
+            <option>Investment related</option>
+            <option>Listing related</option>
+            <option>Others</option>
+          </select>
+          <br>-->
+          <textarea class="input-style" name='MESSAGE' id='contact_message'  placeholder="Message"></textarea>
+          <br><br>
+          <button type='submit' value='Submit' class="btn" style="float:right;">Submit</button>
+          <div style="clear:both;"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Contact end ------------>
+<footer>
+  <p class="small-font">© 2018 WOWX. All Rights Reserved. <a href="terms.html" target="_blank" style="color:#f2c968;">Terms and Conditions</a></p>
+</footer>
+
+
+<!---------- Participate form ------------> 
+<div id="participateform" class="white-popup mfp-hide sans">
+  <div class="h-title"><h1>Participate</h1></div>
+  <br><br>
+  <div class="participate-messages"></div>
+  <form id='participate' class="ajax-participate" action='mailer.php' method='post' accept-charset='UTF-8'>
+    <input type='hidden' name='submitted' id='submitted' value='1'/>
+    <input type="hidden" name="type" value="participate" />
+    <input type='text' class="input-style" name='name' id='participate_name'  placeholder="Name" />
+    <br>
+    <input type='text' class="input-style" name='email' id='participate_email' placeholder="email address" />
+    <br><br>
+    <button type='submit' value='Submit' class="btn" style="float:right;">Participate</button>
+    <div style="clear:both;"></div>
+  </form>
+</div>
+<!---------- Participate form end ------------> 
+
+<!---------- List with us form ------------> 
+<div id="listform" class="white-popup mfp-hide sans">
+    <div class="h-title"><h1>List With Us</h1></div>
+    <br><br>
+    <div class="list-messages"></div>
+    <form id='list' class="ajax-list" action='mailer.php' method='post' accept-charset='UTF-8'>
+      <input type='hidden' name='submitted' id='submitted' value='1'/>
+      <input type="hidden" name="type" value="participate" />
+      <input type='text' class="input-style" name='name' id='list_name'  placeholder="Name" />
+      <br>
+      <input type='text' class="input-style" name='email' id='list_email' placeholder="Email address" />
+      <br>
+      <input type='text' class="input-style" name='email' id='list_contact' placeholder="Contact No." />
+      <br>
+      <input type='text' class="input-style" name='project' id='list_project' placeholder="ICO project name" />
+      <br><br>
+      <button type='submit' value='Submit' class="btn" style="float:right;">Submit</button>
+      <div style="clear:both;"></div>
+    </form>
+  </div>
+  <!---------- List with us form end ------------> 
+
+<!---------- Team popoup form ------------> 
+<div id="alan" class="white-popup mfp-hide sans">
+  <div class="h-title">
+    <h1>Alan chee</h1>
+    <h2 class="light">CEO</h2>
+  </div>
+  <br><br>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>>
+</div>
+<!----------Team popoup form end ------------> 
+
+<script>
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("header")[addRemClass]('bgChange');
+});
+</script>    
+
+<!-- Add smooth transition menu --> 
+<script>
+$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
+	});
+</script> 
+
+<!-- Add countdown -->
+<script type="text/javascript" src="js/jQuery.countdownTimer.js"></script>
+<!-- Good alternative is to include minified file jQuery.countdownTimer.min.js -->
+<script type="text/javascript" src="js/jQuery.countdownTimer-en.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $("#future_date").countdowntimer({
+            dateAndTime : "2019/02/01 00:00:00",
+            labelsFormat : true,
+            displayFormat : "DHMS",
+        });
+    });
+</script>
+
+<!-- Add flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.flexslider').flexslider({
+            animation: 'slide',
+            controlsContainer: '.flexslider',
+			slideshowSpeed: 3500
+        });
+    });
+
+    $(document).ready(function () {
+        $('.mobile-slider').flexslider({
+            animation: 'slide',
+            controlsContainer: '.mobile-slider',
+			slideshowSpeed: 3500
+        });
+    });
+	
+	$(document).ready(function () {
+        $('.media-slider').flexslider({
+            animation: 'slide',
+            controlsContainer: '.media-slider',
+			slideshowSpeed: 6000
+        });
+    });
+	
+	$(document).ready(function () {
+        $('.video-slider').flexslider({
+            animation: 'none',
+            controlsContainer: '.video-slider',
+        });
+    });
+	
+</script>
+
+<!-- Add magnifique popup --> 
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true,
+  mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+  
+});
+		
+    });
+</script>
+
+<!-- Add animated text -->
+<script src="js/wow.js"></script>
+
+<script>
+new WOW().init();
+</script>
+
+
+
+</body>
+</html>
