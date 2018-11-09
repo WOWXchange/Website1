@@ -172,7 +172,7 @@ Home & content
 	padding:0; 
 	position:relative; 
 	height:950px;
-	background-image:url(img/main-bg.jpg);
+	background-image:url(img/main-bg2.jpg);
 	background-position:bottom center;
 	background-size:cover;
 	box-sizing:border-box;
@@ -310,7 +310,7 @@ td {
 }
 
 .black-angle {
-	background-image:url(img/bg-angle.png); 
+	background-image:url(img/bg-angle-dark-white.png); 
 	background-color:#252525;
 }
 .grey-angle {
