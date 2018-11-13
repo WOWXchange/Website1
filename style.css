@@ -125,6 +125,51 @@ ul#menu li a:hover {
 	color:#f8992b;
 }
 
+.lng {
+	font-size: 12px !important;
+    letter-spacing: 1px;
+    color: #f8992b !important;
+    transition: 0.3s;
+    padding-top: 13px;
+    text-align: center;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+	border: 1px solid #f8992b;
+	cursor: pointer;
+}
+
+.lng:hover {
+	color:#fff !important;
+	background:#f8992b;
+}
+
+.lng-mobile {
+	padding: 20px 0 20px 33px;
+}
+
+.lng-mobile a {
+	font-size:12px;
+	letter-spacing: 1px;
+    color: #f8992b !important;
+    transition: 0.3s;
+    padding-top: 13px;
+    text-align: center;
+    border-radius: 20px;
+    width: 40px;
+	height: 40px;
+	text-align: center;
+    display: inline-block;
+	border: 1px solid #f8992b;
+	cursor: pointer;
+}
+
+.lng-mobile a:hover { 
+    background: #f8992b !important;
+	color: #fff !important;
+}
+
 .social-links {
 	z-index: 1000;
     position: fixed;
@@ -312,6 +357,7 @@ td {
 .black-angle {
 	background-image:url(img/bg-angle-dark-white.png); 
 	background-color:#252525;
+	background-position: center bottom -1px;
 }
 .grey-angle {
 	background-image:url(img/bg-angle-media.png);
