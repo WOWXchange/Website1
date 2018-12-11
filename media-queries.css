@@ -113,11 +113,11 @@ td {
   font-size: 11px;
 }
 
-.zerocap, .hardcap {font-size:12px;}
+.zerocap, .hardcap {font-size:11px;}
 
 .current-cap {
-    left: 20%;
-    font-size: 12px;
+    left: 26%;
+    font-size: 11px;
 }
 
 .social-links {
