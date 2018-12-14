@@ -37,6 +37,8 @@
 	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+<!-- Sendgrid -->
+<script type="text/javascript" src="//sgwidget.leaderapps.co/js/sg-widget.js"></script>
 
 <style>
 
@@ -183,7 +185,7 @@
           </div>
         </div>  
         <br><br><br><br>
-        <a href="wowx-whitepaper.pdf" target="_blank" class="btn wow fadeInUp" data-wow-delay="0.3s">Whitepaper</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#participateform" class="btn  open-popup-link wow fadeInUp" data-wow-delay="0.3s">Participate</a>
+        <a href="wowx-whitepaper.pdf" target="_blank" class="btn wow fadeInUp" data-wow-delay="0.3s">Whitepaper</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#participateform" class="btn  open-popup-link wow fadeInUp" data-wow-delay="0.3s">Subscribe</a>
       </div>
     </div>
     <br><br>
@@ -509,7 +511,7 @@
     <br><br><br><br>
     <div class="row wow fadeInUp" style="text-align:center;">
       <div class="col-md-3 col-sm-3 col-xs-6 v-pad">
-        <a href="#marc" class="open-popup-link"><img src="img/team-marc.png" alt=""></a>
+        <img src="img/team-marc.png" alt="">
         <br><br>
         <h2>Marc Bell</h2>
         <p>CEO</p>
@@ -530,7 +532,7 @@
         <img src="img/team-darren.png" alt="">
         <br><br>
         <h2>Darren Teh</h2>
-        <p>CEO</p>
+        <p>CMO</p>
       </div>
     </div>
     <br><br>
@@ -992,9 +994,9 @@
 
 <!---------- Participate form ------------> 
 <div id="participateform" class="white-popup mfp-hide sans">
-  <div class="h-title"><h1>Participate</h1></div>
+  <div class="h-title"><h1>Subscribe</h1></div>
   <br><br>
-  <div class="participate-messages"></div>
+  <!--<div class="participate-messages"></div>
   <form id='participate' class="ajax-participate" action='mailer.php' method='post' accept-charset='UTF-8'>
     <input type='hidden' name='submitted' id='submitted' value='1'/>
     <input type="hidden" name="type" value="participate" />
@@ -1004,9 +1006,26 @@
     <br><br>
     <button type='submit' value='Submit' class="btn" style="float:right;">Participate</button>
     <div style="clear:both;"></div>
-  </form>
+  </form>-->
+  <div id="sendgrid-subscription-widget" class="sendgrid-subscription-widget" data-emailerror="Please enter a valid email address" data-checkboxerror="Please tick the box to accept our conditions">
+    <form id="sg-widget" data-token="a98039f361b44b8a78fd7458b078749d" onsubmit="return false;">
+      <div class="sg-response" id="sg-response"></div>
+      <input id="sg_signup_first_name" type="text" name="sg_signup_first_name" class="input-style" placeholder="First Name" required>
+      <br>
+      <input id="sg_signup_last_name" type="text" name="sg_signup_last_name" class="input-style" placeholder="Last Name" required>
+      <br>
+      <input id="sg_email" type="email" name="sg_email" placeholder="you@example.com" required>
+      <br><br>
+      <button type="submit" id="sg-submit-btn" class="btn" value="Subscribe">Subscribe</button>
+      <br><br>
+      <div class="sg-consent-text" style="color:#999999;">
+        <label style="font-weight:300;"><input type="checkbox" id="sg_consent_checkbox" name="sg_consent_checkbox">&nbsp;&nbsp; I understand and consent to the following</label> <a target="_blank" href="privacy.html"><b>Privacy Notice</b></a>
+      </div>
+    </form>
+  </div>
 </div>
 <!---------- Participate form end ------------> 
+
 
 <!---------- List with us form ------------> 
 <div id="listform" class="white-popup mfp-hide sans">

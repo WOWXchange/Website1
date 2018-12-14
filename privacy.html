@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WOWX - Privacy Policy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap & Jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="jQuery.countdownTimer.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <link href="magnific-popup.css" rel="stylesheet">
+    <link href="sidemenu.css" rel="stylesheet">
+    <link href="flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="media-queries.css" rel="stylesheet">
+    	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+<!-- Sendgrid -->
+<script type="text/javascript" src="//sgwidget.leaderapps.co/js/sg-widget.js"></script>
+
+<!-- Add sidemenu -->
+<script>
+(function($){
+	// Menu Functions
+	$(document).ready(function(){
+  	$('#menuToggle').click(function(e){
+    	var $parent = $(this).parent('nav');
+      $parent.toggleClass("open");
+      var navState = $parent.hasClass('open') ? "hide" : "show";
+      $(this).attr("title", navState + " navigation");
+			// Set the timeout to the animation length in the CSS.
+			setTimeout(function(){
+				console.log("timeout set");
+				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+			}, 200);
+    	e.preventDefault();
+  	});
+  });
+})(jQuery);
+
+          function closeSidebar(e) {
+            var obj = event.target;
+            var $parent = $('nav');
+            $parent.toggleClass("open");
+            var navState = $parent.hasClass('open') ? "hide" : "show";
+            $(obj).attr("title", navState + " navigation");
+            setTimeout(function () {
+              $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+            }, 200);
+          }
+
+   </script>
+
+</head>
+<body>
+
+ <div class="social-links">
+    <a href="https://www.facebook.com/wowx.io/" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/WOWXToken" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://medium.com/wowxtoken" target="_blank"><i class="fa fa-medium"></i></a>
+    <a href="" target="_blank"><i class="fa fa-bitcoin"></i></a>
+    <a href="http://t.me/WOWXToken" target="_blank"><i class="fa fa-telegram"></i></a>
+ </div>
+  
+<!------------ Navigation start ------------>
+<header style="background: rgba(37, 37, 37, 1);">
+  <div class="container"><a href="index.html">
+    <div id="logo"></div>
+    </a>
+  </div>
+</header>
+<!------------ Navigation end ------------>
+
+
+<!------------ Terms start ------------>
+<section class="darkgrey-pattern privacy">
+  <div class="container">
+    <div class="h-title"><h1 class="white-text">Privacy Policy</h1></div>
+    <br><br><br>
+    <p>By submitting your personal information to us, you consent to such information being used by us for the provision of the Services and also for us and Novum Capital, our token sale manager, to communicate with you.</p>
+    <br>
+    <p>In the event if you do not agree for WOWX to process your data, please notify WOWX via email at <a href="mailto:hello@wowx.io" style="color:#f2c968;">hello@wowx.io.</a></p>
+  </div>
+</section>
+<!------------ Terns end ------------>
+<footer>
+  <p class="small-font">© 2018 WOWX. All Rights Reserved. <a href="terms.html" target="_blank" class="open-popup-link" style="color:#f2c968;">Terms and Conditions</a> & <a href="privacy.html" style="color:#f2c968;">Privacy Policy</a></p>
+</footer>
+
+
+</body>
+</html>

@@ -522,7 +522,7 @@ background: #333333;;
   margin-bottom: 15px;
 }
 
-textarea {height:120px; padding-top:10px;}
+textarea {height:120px; padding-top:10px; resize: none;}
 
 select {
 	color:#999999;
@@ -561,3 +561,9 @@ footer {
 	text-align: center;
 	background: #252525;
 }
+
+.terms, .privacy {padding-top:150px;}
+
+.terms p, .privacy p {color:#fff;}
+
+.privacy {height:100%;}
