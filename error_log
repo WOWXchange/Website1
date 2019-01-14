@@ -1,0 +1,48 @@
+[18-Dec-2018 21:29:33 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[18-Dec-2018 21:29:33 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[18-Dec-2018 21:29:33 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[22-Dec-2018 05:31:18 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[22-Dec-2018 05:31:19 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[22-Dec-2018 05:31:19 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[22-Dec-2018 05:31:36 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[22-Dec-2018 05:31:36 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[22-Dec-2018 05:31:36 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[22-Dec-2018 18:23:50 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[22-Dec-2018 18:23:50 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[22-Dec-2018 18:23:50 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[24-Dec-2018 06:36:01 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[24-Dec-2018 06:36:01 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[24-Dec-2018 06:36:01 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[25-Dec-2018 23:54:23 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[25-Dec-2018 23:54:23 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[25-Dec-2018 23:54:23 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[26-Dec-2018 19:49:46 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[26-Dec-2018 19:49:46 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[26-Dec-2018 19:49:46 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[26-Dec-2018 19:49:57 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[26-Dec-2018 19:49:57 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[26-Dec-2018 19:49:57 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[27-Dec-2018 21:17:43 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[27-Dec-2018 21:17:43 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[27-Dec-2018 21:17:43 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[28-Dec-2018 19:45:34 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[28-Dec-2018 19:45:34 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[28-Dec-2018 19:45:34 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[29-Dec-2018 17:44:24 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[29-Dec-2018 17:44:24 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[29-Dec-2018 17:44:24 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[30-Dec-2018 16:05:20 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[30-Dec-2018 16:05:20 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[30-Dec-2018 16:05:20 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[03-Jan-2019 11:29:35 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[03-Jan-2019 11:29:35 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[03-Jan-2019 11:29:35 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[03-Jan-2019 14:28:01 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[03-Jan-2019 14:28:01 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[03-Jan-2019 14:28:01 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[07-Jan-2019 00:13:40 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[07-Jan-2019 00:13:40 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[07-Jan-2019 00:13:40 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
+[12-Jan-2019 04:53:45 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[12-Jan-2019 04:53:45 Asia/Kuala_Lumpur] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/juliuske/wowx.io/mailer.php on line 8
+[12-Jan-2019 04:53:45 Asia/Kuala_Lumpur] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/juliuske/wowx.io/mailer.php on line 8
