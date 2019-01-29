@@ -156,8 +156,8 @@
     <ul id="menu">
       <li><a href="#home">主页</a></li>
       <li><a href="#about">WOWX特征</a></li>
-      <!--<li><a href="#media">Media</a></li>
-      <li><a href="#video">Video</a></li>-->
+      <!--<li><a href="#media">Media</a></li>-->
+      <li><a href="#video">视频</a></li>
       <li><a href="#team">团队</a></li>
       <li><a href="#roadmap">路线图</a></li>
       <li><a href="#contact">联系我们</a></li>
@@ -167,8 +167,8 @@
       <a href="" id="menuToggle" title="show menu"><span class="navClosed"></span></a> 
       <a href="#home" onclick="closeSidebar(this)">主页</a>
       <a href="#about" onclick="closeSidebar(this)">WOWX特征</a>
-      <!--<a href="#media" onclick="closeSidebar(this)">Media</a>
-      <a href="#video" onclick="closeSidebar(this)">Video</a>-->
+      <!--<a href="#media" onclick="closeSidebar(this)">Media</a>-->
+      <a href="#video" onclick="closeSidebar(this)">视频</a>
       <a href="#team" onclick="closeSidebar(this)">团队</a>
       <a href="#roadmap" onclick="closeSidebar(this)">路线图</a>
       <a href="#contact" onclick="closeSidebar(this)">联系我们</a>
@@ -478,12 +478,12 @@
 </section>
  Media end ------------>
 
-<!------------ Video start 
+<!------------ Video start ------------>
 <section id="video">
     <div class="container">
       <div class="h-title"><h1>Video</h1></div>
-      <br><br>
-      <div class="row">
+      <br><br><br><br>
+      <!--<div class="row">
         <div class="flex-container wow fadeInUp">
           <div class="video-slider">
             <ul class="slides">
@@ -524,10 +524,13 @@
             </ul>
           </div>
         </div>
+      </div>-->
+      <div style="text-align:center;">
+        <a href="https://www.youtube.com/watch?v=zYLm2kBrA5M" class="video-pop-up"><img src="img/video-thumb.jpg" alt=""></a>
       </div>
     </div>
 </section>
- Video end ------------>
+<!------------ Video end ------------>
 
 <!------------ Team start ------------>
 <section id="team" class="grey-pattern">
@@ -1201,6 +1204,26 @@ $(function() {
   mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   
 });
+		
+    });
+
+    $(document).ready(function () {
+        $('.video-pop-up').magnificPopup({
+			type: 'iframe',
+		});
+
+		$('a.gallery').magnificPopup({
+			type: 'image',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1]
+			},
+			image: {
+				titleSrc: 'title',
+				tError: 'The image could not be loaded.',
+			}
+		});
 		
     });
 </script>
