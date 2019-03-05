@@ -41,6 +41,10 @@ h2 {font-size:24px; color:#252525; padding:0; margin:0; font-weight:700; line-he
     color:#252525;
 }
 
+.btn:focus{
+	color:initial;
+}
+
 .white-btn {
 	color:#fff;
 	background:transparent;
@@ -71,6 +75,19 @@ img {width:100%;}
 	padding-left:30px;
 	padding-top:10px;
 	box-sizing: border-box;
+}
+
+.subscription {
+    position: fixed;
+    display: block;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
+
+.subscribe-btn {
+	padding:10px 15px;
+	font-size:14px;
 }
 
 /* ------------------------------------------------------------------
