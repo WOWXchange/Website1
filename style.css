@@ -57,7 +57,7 @@ h2 {font-size:24px; color:#252525; padding:0; margin:0; font-weight:700; line-he
 }
 
 a:hover {text-decoration:none;}
-a:focus {outline: none !important; text-decoration:none;}
+a:focus {outline: none !important; text-decoration:none; color: inherit;}
 a {color:inherit;}
 
 section {padding:90px 0;}
@@ -79,11 +79,20 @@ img {width:100%;}
 
 .subscription {
     position: fixed;
-    display: block;
-    bottom: 30px;
-    right: 30px;
-    z-index: 999;
+	display: block;
+	width:100%;
+    bottom: 0px;
+	z-index: 999;
+	height: 60px;
+	line-height: 60px;
+	font-size: 18px;
+	background: #f8992b;
+	text-align:center;
+	color:#252525;
+	font-weight: 700;
 }
+
+.subscription:hover {color:#fff;}
 
 .subscribe-btn {
 	padding:10px 15px;

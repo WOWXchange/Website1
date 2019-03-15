@@ -96,6 +96,12 @@ td {
     border: 4px solid #f8992b
 }
 
+.subscription {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+}
+
 }
 
 @media (max-width: 480px) {	
@@ -157,6 +163,8 @@ ul.social li a {
 ul.social i {
     font-size: 14px;
 }
+
+
 
 }
 
