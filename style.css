@@ -83,8 +83,8 @@ img {width:100%;}
 	width:100%;
     bottom: 0px;
 	z-index: 999;
-	height: 60px;
-	line-height: 60px;
+	height: 50px;
+	line-height: 50px;
 	font-size: 18px;
 	background: #f8992b;
 	text-align:center;
@@ -583,7 +583,8 @@ input[type="text"]:focus, input[type="email"]:focus,textarea:focus, select:focus
 }
 
 footer {
-	padding:40px; 
+	height: 140px;
+	padding:30px; 
 	border-top:1px solid #515151;
 	text-align: center;
 	background: #252525;
