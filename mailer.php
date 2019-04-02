@@ -12,10 +12,10 @@ $mail_username = 'ec668f36c99236';      // SMTP username
 $mail_password = '09288dd8eed4ed';      // Enable TLS encryption, `ssl` also accepted
 $mail_port = 2525;*/
 
-$mail_host = 'mail.8-ideas.com';        // Specify main and backup SMTP servers
-$mail_username = 'noreply@8-ideas.com';      // SMTP username
-$mail_password = 'passw0rd';      // Enable TLS encryption, `ssl` also accepted
-$mail_port = 465;
+$mail_host = 'smtp.sendgrid.net';        // Specify main and backup SMTP servers
+$mail_username = 'novumglobal';      // SMTP username
+$mail_password = 'TRN4qnCbY4W5ebF';      // Enable TLS encryption, `ssl` also accepted
+$mail_port = 587;
 
 if(isset($_POST['submitted'])) {
     if($_POST['type'] == 'participate') {
@@ -68,12 +68,12 @@ if(isset($_POST['submitted'])) {
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = $mail_username;                 // SMTP username
             $mail->Password = $mail_password;                           // SMTP password
-            $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+            #$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = $mail_port;                                    // TCP port to connect to
 
             //Recipients
             $mail->setFrom('noreply@8-ideas.com', '8-ideas');
-            $mail->addAddress('hello@8-ideas.com', '8-ideas');     // Add a recipient
+            $mail->addAddress('hello@wowx.io', '8-ideas');     // Add a recipient
 
             // Get the form fields and remove whitespace.
             $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
