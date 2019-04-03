@@ -595,3 +595,9 @@ footer {
 .terms p, .privacy p {color:#fff;}
 
 .privacy {height:100%;}
+
+.btn-padding {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
