@@ -102,6 +102,10 @@ td {
 	font-size: 14px;
 }
 
+.current-cap {
+	left:15%;
+}
+
 }
 
 @media (max-width: 480px) {	
@@ -124,7 +128,7 @@ h2 {font-size:20px;}
 .zerocap, .hardcap {font-size:11px;}
 
 .current-cap {
-    left: 26%;
+    left: 11%;
     font-size: 11px;
 }
 
